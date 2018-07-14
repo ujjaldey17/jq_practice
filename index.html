@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Hello, world!</title>
+   
+  </head>
+  <body>
+<h1>click here.</h1>
+
+   <button type="button" class="btn1">open</button>
+   <button type="button" class="btn2">open</button>
+   <button type="button" id="btn3" class="btn btn-danger">see here</button>
+   <button type="button" id="btn4" class="btn btn-success">see here</button>
+    <h2>Lorem ipsum dolor.</h2>
+        <p>This is it</p>
+        
+        <div id="flip">Click to slide the panel down or up</div>
+<div id="panel">Hello life</div>
+
+<ul class="list-unstyled">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Features</li>
+                    <li>Features</li>
+                    <li>Project</li>
+                    <li>Contact Us</li>
+                    <li>Contact Us</li>
+</ul>
+
+   <button type="button" id="see" class="btn btn-danger">see it</button>
+<h3>07 Lorem ipsum.</h3>
+<h3>05 porem ipsum.</h3>
+<h3>100 Lorem ipsum dolor.</h3>
+<h3>100 porem ipsum dolor.</h3>
+    
+   <a href="#" title="Gp" class="well well-sm">Grameenphone</a> 
+<a href="#" title="FB" class="well well-sm">Facebook</a> 
+<a href="#" title="twitter" class="well well-sm">Twitter</a>
+
+<form >
+First Name : <input type="text"  name="firstname" >
+<br>
+<br>
+Password : <input type="password" name="password">
+</form>
+ <br>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officia nihil quo commodi dolor iusto debitis expedita voluptatum officiis, nesciunt.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+   <br>
+   <br>
+    <button>click it</button>
+
+<p class="p1">This is a paragraph with little content.</p>
+<p class="p1">This is another small paragraph.</p>
+<br>
+<br>
+ <button class="btn9">Start Animation</button>
+   <div class="div1"></div>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   
+   <button id="stop">Stop sliding</button>
+
+<div id="flip1">Click to slide down panel</div>
+<div id="panel1">Hello world!</div>
+   <br>
+   <br>
+   <button class="btn10">click</button>
+
+<p class="p10">This is a paragraph with little content.</p>
+   <br>
+   <br>
+  <p class="p11">life is beautiful</p>
+
+<button class="btn15">Click me</button>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+   <script>
+    $(document).ready(function(){
+       $("h1").click(function(){
+        alert("yes,its ok");
+       });
+       });
+$(document).ready(function(){
+	alert("hello");
+});
+       $(document).ready(function(){
+          $(".btn1").click(function(){
+              alert("yes,its open");
+          });
+           $(".btn2").click(function(){
+               $(".btn2").hide("3000");
+           });
+       });
+$(document).ready(function(){
+    $("#btn3").click(function(){
+        $("#btn3").fadeOut(3000);
+    });
+});
+       $(document).ready(function(){
+   $("#btn4").fadeTo(3000,0.3, function(){
+        alert("Got it!");
+    });
+});
+   $(document).ready(function(){
+    $("h2").click(function(){
+        $("p").fadeToggle(1000);
+    });
+    $("p").hide();
+});
+
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+
+       $(document).ready(function(){
+    $("li:odd").addClass("odd");
+    $("li:even").addClass("even");
+    $("li:first").addClass("first");
+    $("li:last").addClass("last");
+    $("li:eq(3)").addClass("nth");        
+});
+    
+       $(document).ready(function(){
+    $("h3").hide();
+    $("#see").click(function(){
+        $("h3:contains('Lorem')").fadeIn(2000);
+    });
+});
+
+       $(document).ready(function(){
+    $("a[title='twitter']").fadeOut(3000);
+});
+
+$(document).ready(function(){
+    $(":input:password").addClass("form");
+});
+
+       $(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+       $(document).ready(function(){
+    $("button").click(function(){
+        $(".p1").toggle();
+    });
+});
+       
+       $(document).ready(function(){
+    $(".btn9").click(function(){
+        $(".div1").animate({left: '250px'});
+    });
+});
+       
+       $(document).ready(function(){
+    $("#flip1").click(function(){
+        $("#panel1").slideDown(5000);
+    });
+    $("#stop").click(function(){
+        $("#panel1").stop();
+    });
+});
+       $(document).ready(function(){
+    $(".btn10").click(function(){
+        $(".p10").hide("slow", function(){
+            alert("The paragraph is now hidden");
+        });
+    });
+});
+       $(document).ready(function(){
+    $(".btn15").click(function(){
+        $(".p11").css("color", "red")
+            .slideUp(2000)
+            .slideDown(2000);
+    });
+});
+</script>
+       <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+         
+  </body>
+</html>

@@ -1,0 +1,55 @@
+#btn3{
+    background-color: aqua;
+    padding: 10px;
+}
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+#panel{
+    padding: 60px;
+    display: none;
+}
+.odd{
+    background: yellow;
+    padding: 10px;
+}
+.even{
+    background: aqua;
+    padding: 10px;
+}
+
+.first{
+    background: pink;
+    padding: 10px;
+}
+.last{
+    background: pink;
+    padding: 10px;
+}
+.nth{
+    background: maroon;
+    color: oldlace;
+    padding: 10px;
+}
+.form{
+    border: 2px solid red;
+}
+.div1{
+    background-color: bisque;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+#panel1, #flip1 {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+#panel1{
+    padding: 60px;
+    display: none;
+}
